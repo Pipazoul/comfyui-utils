@@ -1,16 +1,11 @@
-"""Top-level package for pipazoul_utils."""
+from .BasicTutorialTimesTwo import TimesTwo
 
-__all__ = [
-    "NODE_CLASS_MAPPINGS",
-    "NODE_DISPLAY_NAME_MAPPINGS",
-    "WEB_DIRECTORY",
-]
+NODE_CLASS_MAPPINGS = {
+    "btTimesTwo": TimesTwo
+}
 
-__author__ = """pipazoul-comfyui-utils"""
-__email__ = "yassin@siouda.com"
-__version__ = "0.0.1"
+NODE_DISPLAY_NAMES_MAPPINGS = {
+    "btTimesTwo": "Basic Tutorial - Times Two"
+}
 
-from .src.pipazoul_utils.nodes import NODE_CLASS_MAPPINGS
-from .src.pipazoul_utils.nodes import NODE_DISPLAY_NAME_MAPPINGS
-
-WEB_DIRECTORY = "./web"
+__all__ = ['NODE_CLASS_MAPPINGS', 'NODE_DISPLAY_NAME_MAPPINGS']
